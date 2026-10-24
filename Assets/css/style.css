@@ -9,4 +9,81 @@ html {
 /* khoi phuc lai co chu */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins";
+}
+/* ==========common============= */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0px 16px;
+  min-width: 118px;
+  line-height: 50px;
+  color: white;
+  font: normal none 600 1.6rem/1.75 "Poppins";
+  text-align: center;
+  border-radius: 24.5px 24.5px 24.5px 24.5px;
+  background: black;
+}
+
+.header {
+  background-color: #fffcf4ff;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.header.fix {
+  position: sticky;
+  top: -26px;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav a {
+  position: relative;
+  font: normal none 400 1.6rem/1.75 "Poppins";
+  color: grey;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  height: 2px;
+  width: 12px;
+  content: "";
+  border-radius: 1px;
+  background-color: black;
+}
+
+header .btn-signup {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
 }
